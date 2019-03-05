@@ -10,6 +10,7 @@ for test in range(1, T+1):
     arr.insert(0,0)
     pos = N
     charge = 0
+
     while pos > 1:
         for i in range(len(arr)):
             if i + arr[i] >= pos:

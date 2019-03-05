@@ -18,4 +18,5 @@ for test in range(t):
                 see[j][i] = see[j][i - 1] + arr[j][i]
             elif i == 0 and j != 0:
                 see[j][i] = see[j - 1][i] + arr[j][i]
+
     print(f'#{test+1} {see[-1][-1]}')

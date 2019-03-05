@@ -1,5 +1,6 @@
 import sys
 sys.stdin = open('5201.txt', 'r')
+
 T= int(input())
 for test in range(T):
     N, M = list(map(int, input().split()))
