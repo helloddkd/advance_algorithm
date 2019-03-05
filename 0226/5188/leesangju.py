@@ -1,5 +1,4 @@
 import sys
-<<<<<<< HEAD
 sys.stdin = open("5188.txt","r")
 
 def route(right, down, total_move, total_sum):
@@ -25,13 +24,4 @@ for test_case in range(1,T+1):
     minimum = 10*(2*N-2)
     route(0,0,2*N-2, arr[0][0])
     print(f"#{test_case} {minimum}")
-=======
-sys.stdin = open("5188.txt", "r")
 
-T = int(input())
-for test_case in range(1, T+1):
-    N = int(input())
-    arr = []
-    for n in range(N):
-        arr += [list(map(int, input().split()))]
-    move = [0]*N*2
