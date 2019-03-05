@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('5204.txt', 'r')
+sys.stdin = open('5208.txt', 'r')
 
 T = int(input())
 for test in range(1, T+1):
