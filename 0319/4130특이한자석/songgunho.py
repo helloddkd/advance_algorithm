@@ -9,11 +9,9 @@ class Magnet:
     def __init__(self, arr, number, nearby):
         self.magnet = deque(arr)
         self.moved = False
-        self.number = number
         self.nearby = nearby
 
     def move(self,ang):
-        # print(ang,self.number,self.nearby)
         self.moved = True
         for next in self.nearby:
             if next[1] == 6:
@@ -38,18 +36,9 @@ for _ in range(T):
             nearby = [[2,6]]
         mag.append(Magnet(arr[y], y, nearby))
 
-    # for y in mag:
-    #     print(y.nearby)
-    # print(N)
-    # print(rota)
-    #
-    # for pk in arr:
-    #     print(pk)
-
     for j in range(N):
         mag[rota[j][0]-1].move(rota[j][1])
         for i in mag:
-            # print(i.magnet)
             i.moved = False
 
     result = 0

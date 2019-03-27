@@ -35,8 +35,6 @@ class Viper:
             que2[(new_x, new_y)] = Viper(new_x, new_y, new_size,new_act, new_time, new_dead)
 
 
-
-
 for _ in range(T):
     Y, X, K = map(int, input().split())
     arr = [list(map(int, input().split())) for __ in range(Y)]
